@@ -1,0 +1,8 @@
+1. Automate tool for software development workflow 
+2. Event > Workflow > JOBS > STEP > ACTIONS > Virtual ENV > Runners > Github hosted Runer > Self hosted runner 
+3. Usually written in YAML format
+4. git init .
+5. git remote add origin git@github.com:AAliAbidi/github-actions-test.git
+6. git remote -v
+
+

@@ -1,0 +1,64 @@
+# Git Command Line Basics
+# Git is distributed version control system
+
+1. #git --version 
+2. #git config --global user.name "Ali Abidi"
+3. #git config --global user.email "mac_universe@live.com"
+4. #git config --list  //To check config values.
+5. #git help config
+6. #git config --help
+git remote add origin https://github.com/AAliAbidi/gocode.git  imp 
+git remote add origin git://github.com/somename/Web-App.git
+7. Generate personal access token to bypass 2 factor Authentication > Setting > developer settings > Personal access token > Generate personal Access token > do not mark any check box > click on generate.
+git remote set-url origin https://github.com/MyRepo/project.git
+git add .
+git checkout -b mbrdi_hooks //create new branch 
+git pull origin  master 
+git commit -m "force push"
+git push origin master --force
+7. #git init //Local repo and place .git dir in project dir.
+8. #git status //To track the changes.
+9. #touch .gitignore //Create ignore file and edit under vim to avoide list of files to be 
+                    //uploaded to git remote, it accepts wild card. 
+   Example: 
+           .DS_store
+           .projxit
+           ect
+           *.pyc
+10. #git add -A //Add all file to staging area you can also specify individual files.
+11. #git status 
+12. #git reset <Fill
+eName> //Remove specific file from staging area.
+13. #git reset //Remove everthing from staging area. 
+14. #git commit -m "MBRDI Appdef added."
+15. #git log //Show the hash number of that commit. 
+16. #git clone <URL> <Where you want to clone> 
+17. #git remote -v //Give info about the repo.
+18. #git branch -a //list all the branch in repo locally as well as globally. 
+19. #git diff //list changes in repository file wise.
+20. #git pull //get the changes made till last time 
+21. #git push origin master //where master is the branch name and origin is the repo name. 
+                            //Note avoide pusing to master branch
+22. #It will create new branch 
+23. #git checkout <branchName> //It will switch the branch 
+24. #git push -u origin <branchName> //It will push the branch with content, in future we can directly do git push/pull. 
+git remote update
+git fetch
+25. #git branch -a 
+26. Merging 
+         
+        - #git checkout master
+        - #git pull origin master
+        - #git branch --merged //It will list recently merged branch 
+        - #git merge <localBranchname> //It will merge with the master
+        - #git push origin master
+        - #git branch -d <branchName> 
+        - #git push origin --delete <branchName>  //To remove remote bbranch 
+#Flow: 
+1. #create branch  >diff > add > status > commit > pull > push 
+
+//Saviour 
+git checkout -f //which will check the status of last files and revert it back to the project
+git log -p -5 //view the last commit 
+git rm --cached <fileName> 
+git status -a 
